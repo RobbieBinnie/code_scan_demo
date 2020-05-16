@@ -1,6 +1,6 @@
 FROM python:3.7-alpine
 
-COPY entrypoint.sh /entrypoint.sh
+COPY main.py /main.py
 COPY regexes.txt /regexes.txt
 
-ENTRYPOINT ["sh", "/entrypoint.sh"]
+ENTRYPOINT ["python3", "/main.py"]
