@@ -3,6 +3,7 @@ import os
 
 def find_files(root_path):
     file_blob = os.popen("find " + root_path + " -type f -not -path '*.git*'").read()
+    print(file_blob)
     return file_blob.split("\n")[:-1]
 
 def search_file(file_name, patterns):
