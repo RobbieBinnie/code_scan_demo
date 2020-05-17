@@ -8,7 +8,7 @@ def find_files(root_path):
 
 def search_file(file_name, patterns):
     found_secrets = []
-    file_contents = open(file_name, 'rb').read()
+    file_contents = open(file_name, 'r').read()
     for pattern in patterns:
         matches = re.findall(pattern, file_contents)
         if matches:
