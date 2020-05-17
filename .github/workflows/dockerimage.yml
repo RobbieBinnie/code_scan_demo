@@ -14,4 +14,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:0.1
     - name: Run the Docker image
-      run: docker run -v ./:/repo my-image-name:0.1
+      run: docker run -v $(pwd):/repo my-image-name:0.1
