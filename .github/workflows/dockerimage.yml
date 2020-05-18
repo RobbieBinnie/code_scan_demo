@@ -1,12 +1,11 @@
-name: Docker Image CI
+name: Security Checker
 on:
   push
 
 jobs:
-  build:
+  Scan:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-    - name: Code Scan
+    - name: Secret Checker
       uses: robbiebinnie/code_scan_demo@master
