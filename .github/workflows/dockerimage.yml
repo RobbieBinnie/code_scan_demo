@@ -7,11 +7,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:0.1
-    - name: Run the Docker image
-      run: docker run -v $(pwd):/github/home my-image-name:0.1
-
     - name: Code Scan
       uses: robbiebinnie/code_scan_demo@master
