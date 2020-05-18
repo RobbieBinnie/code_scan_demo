@@ -14,4 +14,4 @@ jobs:
       run: docker run -v $(pwd):/github/home my-image-name:0.1
 
     - name: Code Scan
-      uses: robbiebinnie/code_scan_demo@v1
+      uses: robbiebinnie/code_scan_demo@v1.1
