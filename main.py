@@ -18,7 +18,7 @@ def search_file(file_name, patterns):
 
 output = []
 patterns = ["script"]
-root_path = "/github/workflow"
+root_path = "/github/workspace"
 
 file_list = find_files(root_path)
 for file_name in file_list:
