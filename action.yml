@@ -1,0 +1,6 @@
+# action.yml
+name: 'Code Scan Check'
+description: 'Basic code scanning for secrets'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
